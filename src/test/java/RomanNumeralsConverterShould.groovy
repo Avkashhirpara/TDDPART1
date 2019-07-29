@@ -6,12 +6,11 @@ class RomanNumeralsConverterShould extends Specification {
     @Unroll
     def "convert given numbers to Roman Numerals #number "(){
         given:
-
             def RomanNumeralConverter converter = new RomanNumeralConverter();
         when:
              def returnValue = converter.convert(number)
         then:
-                returnValue == result
+             returnValue == result
         where:
             number     |       result
                 1      |        "I"
